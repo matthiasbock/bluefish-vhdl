@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<!--
+    VHDL syntax file for Bluefish
+    by Matthias Bock <mail@matthiasbock.net>
+-->
+
+<bflang name="VHDL" version="2.0">
+<header>
+    <mime type="text/x-vhdl"/>
+    <mime type="application/x-vhdl"/>
+
+    <option name="show_in_menu" default="1"/>
+
+    <highlight name="comment" style="comment" />
+    <highlight name="bit" style="string" />
+    <highlight name="bitvector" style="special-string" />
+    <highlight name="type" style="type" />
+    <highlight name="process" style="function" />
+    <highlight name="keyword" style="keyword" />
+    <highlight name="value" style="value" />
+    <highlight name="variable" style="variable" />
+    <highlight name="port" style="tag" />
+    <highlight name="operator" style="operator" />
+    <highlight name="attribute" style="attribute" />
+    <highlight name="brackets" style="brackets" />
+    <highlight name="warning" style="warning" />
+</header>
+<properties>
+    <default_spellcheck enabled="1" spell_decode_entities="1" />
+    
+    <comment id="cm.cpplinecomment" type="line" start="--" />
+</properties>
+<definition>
+    <context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;">
+        <!--
+            Keywords
+            http://www.seas.upenn.edu/~ese171/vhdl/keywordlist.html without arithmetical/logical keywords
+        -->
+        <group  case_insens="1" highlight="keyword">
+            <autocomplete enable="1" />
+            <element pattern="library" />
+            <element pattern="access" />
+            <element pattern="after" />
+            <element pattern="alias" />
+            <element pattern="all" />
+            <element pattern="architecture" />
+            <element pattern="attribute" />
+            <element pattern="begin" />
+            <element pattern="block" />
+            <element pattern="body" />
+            <element pattern="buffer" />
+            <element pattern="bus" />
+            <element pattern="component" />
+            <element pattern="configuration" />
+            <element pattern="disconnect" />
+            <element pattern="downto" />
+            <element pattern="end" />
+            <element pattern="entity" />
+            <element pattern="exit" />
+            <element pattern="generate" />
+            <element pattern="group" />
+            <element pattern="guarded" />
+            <element pattern="impure" />
+            <element pattern="in" />
+            <element pattern="inertial" />
+            <element pattern="inout" />
+            <element pattern="is" />
+            <element pattern="label" />
+            <element pattern="library" />
+            <element pattern="linkage" />
+            <element pattern="literal" />
+            <element pattern="loop" />
+            <element pattern="map" />
+            <element pattern="mod" />
+            <element pattern="new" />
+            <element pattern="next" />
+            <element pattern="of" />
+            <element pattern="on" />
+            <element pattern="open" />
+            <element pattern="others " />
+            <element pattern="out" />
+            <element pattern="package" />
+            <element pattern="port" />
+            <element pattern="postponed" />
+            <element pattern="procedure" />
+            <element pattern="process" />
+            <element pattern="pure" />
+            <element pattern="range" />
+            <element pattern="record" />
+            <element pattern="register" />
+            <element pattern="reject" />
+            <element pattern="return" />
+            <element pattern="select" />
+            <element pattern="severity" />
+            <element pattern="signal" />
+            <element pattern="shared" />
+            <element pattern="to" />
+            <element pattern="transport" />
+            <element pattern="unaffected" />
+            <element pattern="units" />
+            <element pattern="use" />
+            <element pattern="wait" />
+        </group>
+        
+        <!--
+            Operators
+            http://www.csee.umbc.edu/portal/help/VHDL/operator.html
+        -->
+        <group  case_insens="1" highlight="operator">
+            <autocomplete enable="1" />
+            <element pattern="**" />
+            <element pattern="abs" />
+            <element pattern="not" />
+
+            <element pattern="*" />
+            <element pattern="/" />
+            <element pattern="mod" />
+            <element pattern="rem" />
+
+            <element pattern="+" />
+            <element pattern="-" />
+            <element pattern="&" />
+
+            <element pattern="sll" />
+            <element pattern="srl" />
+            <element pattern="sla" />
+            <element pattern="sra" />
+            <element pattern="rol" />
+            <element pattern="ror" />
+
+            <element pattern="=" />
+            <element pattern="\=" />
+            <element pattern="<" />
+            <element pattern="<=" />
+            <element pattern=">" />
+            <element pattern=">=" />
+
+            <element pattern="and" />
+            <element pattern="or" />
+            <element pattern="nand" />
+            <element pattern="nor" />
+            <element pattern="xor" />
+            <element pattern="xnor" />
+        </group>
+    </context>
+</definition>
+</bflang>
